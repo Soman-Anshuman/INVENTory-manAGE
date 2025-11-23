@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import heroImg from "../assets/products-removebg-preview.png";
 import loadGif from "../assets/loader-9184_256.gif";
-// import bgImg from "../assets/squiggles_and_doodles_background.jpg";
+import bgImg from "../assets/squiggles_and_doodles_background.jpg";
 import useApiCall from "../hooks/useApiCall";
 import Card from "../components/Card";
 import { DarkModeContext } from "../context/DarkModeContext";
@@ -86,7 +86,7 @@ const Home = (logged) => {
       className={darkMode ? `bg-slate-900 text-white min-h-[100vh] pb-10` : ``}
     >
       <div className="w-full max-w-[1200px] mx-auto">
-        {/* <img src={bgImg} alt="" className="fixed -z-10 w-full opacity-5" /> */}
+        <img src={bgImg} alt="" className="fixed -z-10 w-full opacity-5" />
 
         {/* hero panel */}
         <div className="w-full flex flex-wrap-reverse p-10">
